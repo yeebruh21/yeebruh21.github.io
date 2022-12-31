@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <title>Anthony Chen</title>
+
+        <link rel = "stylesheet" href="Personal site.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Convergence&family=Lato&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </head>
+
+    <body class = "main-background">
+        <!-- this is how you comment btw-->
+
+        <div class = "menu-container">
+            <!-- button that expands menu -->
+            <div class = "hamburger" onclick = "toggle()">
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+            </div>
+            
+            <div class = "button-group-container">
+                <button class = "button1" id = "b1" onclick = "location.href = 'file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Personal%20site.html#home';">Home</button>
+                <button class = "button2" id = "b2" onclick = "location.href = 'file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Personal%20site.html#about-me';">About Me</button>
+                <button class = "button3" id = "b3" onclick = "location.href='file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Personal%20site.html#experience';">Experience</button>
+                <button class = "button4" id = "b4" onclick = "location.href = 'file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Personal%20site.html#projects';">Projects</button>
+                <button class = "button5" id = "b5" onclick = "location.href = 'file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Resume.html';">Resume</button>
+                <button class = "button6" id = "b6" onclick = "location.href = 'file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Chess.html';">Chess</button>
+                <button class = "button7" id = "b7" onclick = "location.href = 'file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Blog.html';">Blog</button>
+                <button class = "button8" id = "b8" onclick = "location.href = 'file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Contact%20Me.html';">Contact Me</button>
+            </div>
+        </div>
+
+        <div class = "background-animation">
+            <div class = "square" style = "--i:0;"></div>
+            <div class = "square" style = "--i:1;"></div>
+            <div class = "square" style = "--i:2;"></div>
+            <div class = "square" style = "--i:3;"></div>
+            <div class = "square" style = "--i:4;"></div>
+            <div class = "square" style = "--i:5;"></div>
+            <div class = "square" style = "--i:6;"></div>
+            <div class = "square" style = "--i:7;"></div>
+        </div>
+
+        <div class = "main-container" id = "home">
+            <!-- add pic here -->
+            <img src = "img/placeholder.jpg" class = "main-picture" alt = "self pic">
+
+            <div class = "main-text"> 
+                <div class = "main-title1">
+                    Hi, my name's 
+                </div>
+        
+                <div class = "main-title2">
+                    Anthony.
+                </div>
+        
+                <div class = "main-title3">
+                    Welcome to my website.
+                </div>
+        
+                <!-- double arrows pointing downwards -->
+                <div class = "down-arrows-container">
+                    <img src = "img/down-arrow.png" class = "down-arrow" alt="down arrow">
+                </div>
+            </div>
+        </div>
+
+        <div id = "about-me"></div>
+
+        <img src = "img/about me.png" class = "about-title reveal" alt = "about-me">
+
+        <div class = "about-container reveal">
+            <div class = "about-image-container">
+                <img src = "img/flint.jpg" class = "project-image" alt="pic">
+            </div>
+            <div class = "about-text">
+                <h1>Lorem ipsum this is stuf about myself blah blah blah Lorem ipsum this is stuf about myself blah blah blah Lorem ipsum this is stuf about myself blah blah blah Lorem ipsum this is stuf about myself blah blah blah Lorem ipsum this is stuf about myself blah blah blah Lorem ipsum this is stuf about myself blah blah blah </h1>
+            </div>
+        </div>
+
+        <div class = "skills-block reveal">
+            <h1><u>Skills</u></h1>
+            <div class = "skills-row">
+                <div class = "icon-column">
+                    <img src = "img/c.png" class = "skill-icon" alt="cpp icon">
+                    <h2>C</h2>
+                </div>
+                <div class = "icon-column">
+                    <img src = "img/cpp.png" class = "skill-icon" alt="cpp icon">
+                    <h2>C++</h2>
+                </div>
+                <div class = "icon-column">
+                    <img src = "img/java.png" class = "skill-icon" alt="cpp icon">
+                    <h2>Java</h2>
+                </div>
+                <div class = "icon-column">
+                    <img src = "img/javascript.png" class = "skill-icon" alt="cpp icon">
+                    <h2>JavaScript</h2>
+                </div>
+                <div class = "icon-column">
+                    <img src = "img/html.png" class = "skill-icon" alt="cpp icon">
+                    <h2>HTML5</h2>
+                </div>
+                <div class = "icon-column">
+                    <img src = "img/css.png" class = "skill-icon" alt="cpp icon">
+                    <h2>CSS3</h2>
+                </div>
+            </div>
+            <div class = "skills-row">
+                <div class = "icon-column">
+                    <img src = "img/swift.png" class = "skill-icon" alt="cpp icon">
+                    <h2>Swift</h2>
+                </div>
+                <div class = "icon-column">
+                    <img src = "img/swiftui.png" class = "skill-icon" alt="cpp icon">
+                    <h2>SwiftUI</h2>
+                </div>
+                <div class = "icon-column">
+                    <img src = "img/git.png" class = "skill-icon" alt="cpp icon">
+                    <h2>Git</h2>
+                </div>
+                <div class = "icon-column"></div>
+                <div class = "icon-column"></div>
+                <div class = "icon-column"></div>
+            </div>
+        </div>        
+
+        <img src = "img/experience.png" class = "exp-title reveal" alt = "experience" id = "experience">
+
+        <div class = "exp-block reveal">
+            <!--NOTE: INSERT AND FORMAT DATES LATER-->
+            <h1>Business Council and SHSM - <em>High School Organization</em><br></h1>
+            <h2>President</h2>
+            <p>
+                Lorem ipsum blah blah blahLorem ipsum blah blah blahLorem ipsum blah blah blahLorem ipsum blah blah blahLorem ipsum blah blah blahLorem ipsum blah blah blah
+            </p>
+        </div>
+
+        <div class = "exp-block reveal">
+            <h1>WildCard Inc. - <em>Junior Achievement Company</em></h1>
+            <h2>Vice President of Sales</h2>
+            <p>
+                Lorem ipsum blah blah blahLorem ipsum blah blah blahLorem ipsum blah blah blahLorem ipsum blah blah blahLorem ipsum blah blah blahLorem ipsum blah blah blah
+            </p>
+        </div>
+
+        <img src = "img/projects.png" class = "projects-title reveal" alt = "projects" id = "projects">
+
+        <div class = "project-row reveal">
+            <div class = "project-block reveal">
+                <img src = "img/flint.jpg" class = "project-image" alt="pic">
+                <h1>CelebTweets</h1>
+                <div class = "project-text">
+                    Lorem Ipsum blahbalbhalbashasdf>
+                </div>
+            </div>
+            <div class = "project-block reveal">
+                <img src = "img/flint.jpg" class = "project-image" alt="pic">
+                <h1>Milestones</h1>
+                <div class = "project-text">
+                    Lorem Ipsum blahbalbhalbashasdf blahbalbhalbashasdf blahbalbhalbashasdf blahbalbhalbashasdf blahbalbhalbashasdf
+                </div>
+                <img src = "img/github.png" class = "github-icon" alt = "github" onclick = "location.href = 'https://github.com/yeebruh21/Milestones';">
+            </div>
+            <div class = "project-block reveal">
+                <img src = "img/flint.jpg" class = "project-image" alt="pic">
+                <h1>Personal Website </h1>
+                <div class = "project-text">
+                    Lorem Ipsum blahbalbhalbashasdf>
+                </div>
+            </div>
+        </div>
+        <div class = "project-row reveal">
+            <div class = "project-block reveal">
+                <img src = "img/flint.jpg" class = "project-image" alt="pic">
+                <h1>P-Pusher</h1>
+                <div class = "project-text">
+                    Lorem Ipsum blahbalbhalbashasdf>
+                </div>
+            </div>
+            <div class = "project-block reveal">
+                <img src = "img/flint.jpg" class = "project-image" alt="pic">
+                <h1>CleanseO3</h1>
+                <div class = "project-text">
+                    Lorem Ipsum blahbalbhalbashasdf>
+                </div>
+            </div>
+            <div class = "project-block reveal">
+                <img src = "img/flint.jpg" class = "project-image" alt="pic">
+                <h1>And more coming...🔧</h1>
+                <div class = "project-text">
+                    Lorem Ipsum blahbalbhalbashasdf>
+                </div>
+            </div>
+        </div>
+
+        <div class = "main-button-container reveal">
+            <div class = "main-button">
+                <button onclick = "location.href='file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Resume.html';">View Resume >></button>
+            </div>
+        </div>
+
+        <script src = "Personal site.js"></script>
+    </body>
+</html>

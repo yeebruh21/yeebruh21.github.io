@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head><meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <title>Chess</title>
+
+        <link rel = "stylesheet" href="Personal site.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Convergence&family=Lato&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js">
+        </script>
+    </head>
+
+    <body class = "main-background">
+        <img src = "img/bishop.svg" class = "bishop" onclick = "window.open ('https://www.chess.com/member/yeebruh21', '_blank');"/>
+        <img src = "img/rook.svg" class = "rook" onclick = "window.open ('https://lichess.org/@/yeebruh22/', '_blank');"/>
+        
+        <div class = "background-animation">
+            <div class = "square" style = "--i:0;"></div>
+            <div class = "square" style = "--i:1;"></div>
+            <div class = "square" style = "--i:2;"></div>
+            <div class = "square" style = "--i:3;"></div>
+            <div class = "square" style = "--i:4;"></div>
+            <div class = "square" style = "--i:5;"></div>
+            <div class = "square" style = "--i:6;"></div>
+            <div class = "square" style = "--i:7;"></div>
+        </div>
+
+        <div class = "menu-container">
+            <!-- button that expands menu -->
+            <div class = "hamburger" onclick = "toggle()">
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+            </div>
+            
+            <div class = "button-group-container">
+                <button class = "button1" id = "b1" onclick = "location.href = 'file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Personal%20site.html#home';">Home</button>
+                <button class = "button2" id = "b2" onclick = "location.href = 'file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Personal%20site.html#about-me';">About Me</button>
+                <button class = "button3" id = "b3" onclick = "location.href='file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Personal%20site.html#experience';">Experience</button>
+                <button class = "button4" id = "b4" onclick = "location.href = 'file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Personal%20site.html#projects';">Projects</button>
+                <button class = "button5" id = "b5" onclick = "location.href = 'file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Resume.html';">Resume</button>
+                <button class = "button6" id = "b6" onclick = "location.href = 'file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Chess.html';">Chess</button>
+                <button class = "button7" id = "b7" onclick = "location.href = 'file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Blog.html';">Blog</button>
+                <button class = "button8" id = "b8" onclick = "location.href = 'file:///C:/Users/achen/OneDrive/Desktop/Web%20dev/Contact%20Me.html';">Contact Me</button>
+            </div>
+        </div>
+
+        <div class = "chess-title">
+            Chess
+        </div>
+
+        <div class = "chess-container1">
+            <div class = "chess-text1">
+                Lorem ipsum blah blah balh Lorem ipsum blah blah balh Lorem ipsum blah blah balh Lorem ipsum blah blah balh Lorem ipsum blah blah balh Lorem ipsum blah blah balh Lorem ipsum blah blah balh Lorem ipsum blah blah balh Lorem ipsum blah blah balh Lorem ipsum blah blah balh 
+            </div>
+            <div class = "highlight-container">
+                <h1>Highlight Game</h1>
+                <div class = "highlight-game">
+                    <iframe id="9804765" allowtransparency="true" frameborder="0" style="width:300px;height: 300px;border:none;" src="//www.chess.com/emboard?id=9804765">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class = "chess-container2">
+            <img src = "img/queen.svg" class = "queen" onclick = "window.open('https://lichess.org/@/yeebruh21/', '_blank');"/>
+            <div class = "chess-subtitle">
+                Live Tracking<br>
+            </div>
+        </div>
+
+        <div class = "slider-wrapper">
+            <div class = "slider">
+                <canvas class = "chart" id="line-chart1" width="550" height="450">
+                </canvas>
+                <canvas class = "chart" id="line-chart2" width="550" height="450">
+                </canvas>
+                <canvas class = "chart" id="line-chart3" width="550" height="450">
+                </canvas>
+            </div>
+            <div class = "slider-nav">
+                <a href = "#line-chart1"></a>
+                <a href = "#line-chart2"></a>
+                <a href = "#line-chart3"></a>
+            </div>
+        </div>
+
+        <!--NOTE: If chart.js related errors persist, delete reveal-->
+        
+        <!--bottom portion-->
+        <div class = "stats-container reveal">
+            <div class = "chess-text2">
+                <p id = "world-rank"></p>
+                <p id = "percentile"></p>
+                <p id = "total-wins"></p>
+                <p id = "total-losses"></p>
+                <p id = "lost-bro"></p>
+            </div>
+
+            <div class = "improvement-log">
+                <h1>Improvement Log</h1>
+                <h2>[2022-12-30]: D4-B3 consistent blitz opening, optimal 3|0 playstyle is aggressive yet defensively solid<br></h2>
+                <h2>[2022-12-29]: During winning streak, actively maintain drive to win<br></h2>
+            </div>
+        </div>
+
+        <script src = "Personal site.js"></script>
+    </body>
+</html>
